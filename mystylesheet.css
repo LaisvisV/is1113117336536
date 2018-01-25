@@ -1,3 +1,10 @@
 .mainheading{
     text-align: center;
+    color: white;
+    font-family: "Lucida Sans";
+    background-color: #ff9966;
+    height: 20px;
+    margin: -20px;
+    padding: 60px;
+    overflow: auto;
 }
