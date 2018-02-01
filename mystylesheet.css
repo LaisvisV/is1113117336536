@@ -32,3 +32,13 @@ a:hover, a:active {
     margin-top: 30px;
     float: center;
 }
+
+.headerstyling,.headerstyling:hover{
+    color:#000!important;
+    background-color:#ff9800!important
+
+}
+
+h1{
+    color: white;
+}
