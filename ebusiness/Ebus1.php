@@ -2,15 +2,60 @@
 <html>
     <head>
         <title>Select Product</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         
         <!--jQuert-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery/.min.js"></script>
         <script type="text/javascript" src="cost_calc.js"></script>
         
+        <style>
+    
+        .headerstyling,.headerstyling:hover{
+        color:#000!important;
+        background-color:#ff9800!important
+        }
+        h1{
+        color: white;
+        }
+        </style>
         
     </head>
     
     <body>
+        
+         <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+      <button class="w3-bar-item w3-button w3-large"
+      onclick="w3_close()">Close &times;</button>
+      <a href="cv/cv_page1.html" class="w3-bar-item w3-button">Curriculum Vitae</a>
+      <a href="interests/sports.html" class="w3-bar-item w3-button">Sports</a>
+      <a href="interests/travel.html" class="w3-bar-item w3-button">Travel</a>
+      <a href="ebusiness/Ebus1.php" class="w3-bar-item w3-button">eBusiness</a>
+    </div>
+        
+    <div id="main">
+
+
+    <div class="headerstyling">
+      <button id="openNav" class="w3-button w3-orange w3-xlarge" onclick="w3_open()">&#9776;</button>
+      <div class="w3-container">
+        <center><h1>eBusiness</h1></center>
+      </div>
+    </div>
+        
+    <script>
+    function w3_open() {
+      document.getElementById("main").style.marginLeft = "25%";
+      document.getElementById("mySidebar").style.width = "25%";
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("openNav").style.display = 'none';
+    }
+    function w3_close() {
+      document.getElementById("main").style.marginLeft = "0%";
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("openNav").style.display = "inline-block";
+    }
+    </script>
         
         <h4>Select a product</h4>
         
