@@ -5,9 +5,35 @@
         <link rel="stylesheet" href="mystylesheet.css" type="text/css"
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href='https://fonts.googleapis.com/css?family=Cedarville Cursive' rel='stylesheet'>
+        
+        <style>
+          h2{
+            font-family: 'Cedarville Cursive';
+            font-size: 150px;
+          }
+          
+          .paragraphstyle{
+            padding-left: 30%;
+            padding-right: 30%;
+          }
+          
+          .paragraphheading{
+            text-align: center;
+          }
+          
+          .paragraphlogo{
+            text-align: center;
+          }
+          
+        </style>
+        
     </head>
     
     <body>
+      
+      <!-- Following code from W3 schools for hamburger menu -->
+      
     <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
       <button class="w3-bar-item w3-button w3-large"
       onclick="w3_close()">Close &times;</button>
@@ -43,18 +69,41 @@
     }
     </script>
     
+      <!-- End of hamburger menu code -->
+
     <center>
-    <br/>
-    <h4>Welcome to my homepage for the IS1113 project!</h4>
-    <p>You can navigate this website using the left sidebar menu.</p>
-    <p>This was all done using HTML, CSS and jQuery with the help of W3 Schools.</p>
-    <br/>
-    <a href="https://github.com/LaisvisV/is1113117336536">GitHub</a>
-    <br/>
-    <br/>
-    <img src="https://www.cubsucc.com/contentfiles/images/CUBS_Logo_Col.jpg" height="25%" width="25%">
-    <img src="https://www.ucc.ie/en/media/2017siteassets/images/ucc_logo.svg" height="25%" width="25%">
-    </body>
+    <h2>Hello!</h2>
     </center>
+    
+    <div class="paragraphstyle">
+      <div class="paragraphheading">
+    <p><b>My name is Laisvunas Vaitiekaitis (also commonly known as Larry) and this is my project for the IS1113 module.</b></p>
+    </div>
+    <p>
+    You can begin to navigate this website using the left sidebar menu, which is also commonly known as the "hamburger" menu among developers.
+    I followed a relatively minimalistic material design inspired theme for styling this website. This is to ensure the website works and looks well on all platforms, regardless of screen size.
+    In my opinion simplicity in both code and design is key, for both ease of access and readability as well as speed of loading and navigating the website.
+    Styling was achieved easily using CSS and Div tags, along with the help of W3 Schools and their CSS file, which I tried to not rely on heavily and used it only where needed.
+    The rest of the website was done using a combination of HTML, jQuery and PHP, along with some JavaScript. Any code used from other sources is cited in my code comments.
+    I also ensured that the code itself was readable and accessible, with proper indentations in place. I hope you enjoy exploring this website and the underlying code.
+    </p>
+    <br/>
+      <a href="https://github.com/LaisvisV/is1113117336536">
+        <img src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="GitHub" width="15%" height="15%">
+      </a>
+      <h3 style="position: absolute;">GitHub</h3>
+      <a href="https://is1113117336536.herokuapp.com/" Heroku>
+        <img src="https://png.icons8.com/windows/1600/heroku.png" alt="Heroku" width="15%" height="15%" align="right">
+      </a>
+      <h3 style="text-align: right;">Heroku</h3>
+    <br/>
+    <br/>
+      <div class="paragraphlogo">
+        <img src="https://www.cubsucc.com/contentfiles/images/CUBS_Logo_Col.jpg" height="20%" width="20%">
+        <img src="https://www.ucc.ie/en/media/2017siteassets/images/ucc_logo.svg" height="20%" width="20%">
+      </div>
+    </div>
+    </body>
+
     
 </html>

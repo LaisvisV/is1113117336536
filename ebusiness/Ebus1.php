@@ -2,37 +2,29 @@
 <html>
     <head>
         <title>Select Product</title>
+        
+        <!--Styling using both my own CSS and also W3 Schools CSS-->
+        <link rel="stylesheet" href="/mystylesheet.css" type="text/css"
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         
-        <!--jQuert-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery/.min.js"></script>
+        <!--jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript" src="cost_calc.js"></script>
-        
-        <style>
-    
-        .headerstyling,.headerstyling:hover{
-        color:#000!important;
-        background-color:#ff9800!important
-        }
-        h1{
-        color: white;
-        }
-        </style>
         
     </head>
     
     <body>
         
-         <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
       <button class="w3-bar-item w3-button w3-large"
       onclick="w3_close()">Close &times;</button>
       <a href="../homepage.html" class="w3-bar-item w3-button">Homepage</a>
-      <a href="cv/cv_page1.html" class="w3-bar-item w3-button">Curriculum Vitae</a>
-      <a href="interests/sports.html" class="w3-bar-item w3-button">Sports</a>
-      <a href="interests/travel.html" class="w3-bar-item w3-button">Travel</a>
-      <a href="interests/cloud.html" class="w3-bar-item w3-button">Cloud Services</a>
-      <a href="ebusiness/Ebus1.php" class="w3-bar-item w3-button">eBusiness</a>
+      <a href="../cv/cv_page1.html" class="w3-bar-item w3-button">Curriculum Vitae</a>
+      <a href="../interests/sports.html" class="w3-bar-item w3-button">Sports</a>
+      <a href="../interests/travel.html" class="w3-bar-item w3-button">Travel</a>
+      <a href="../interests/cloud.html" class="w3-bar-item w3-button">Cloud Services</a>
+      <a href="../ebusiness/Ebus1.php" class="w3-bar-item w3-button">eBusiness</a>
     </div>
         
     <div id="main">
@@ -59,47 +51,48 @@
     }
     </script>
         
-        <h4>Select a product</h4>
-        
-        <br/>
-        
-        <form method="POST" action="Ebus2.php">
+            <h4>Select a Product</h4>
             
-            <label for="salesforce">
-                <input type="radio" id="salesforce" name="product" checked onClick="disabledbtnProceed()"/>
+            <br/>
+            
+            <form method="POST" action="Ebus2.php">
+              
+              <label for="salesforce">
+                <input type="radio" id="salesforce" name="product" checked onClick="disablebtnProceed()"/>
                 SalesForce @ $100
-            </label>
-            
-            <br/>
-            
-            <label for="aws">
-                <input type="radio" id="aws" name="product" onClick="disabledbtnProceed()"/>
+              </label>
+              
+              <br/>
+              
+              <label for="aws">
+                <input type="radio" id="aws" name="product" onClick="disablebtnProceed()"/>
                 AWS @ $300
-            </label>
-            
-            <br/>
-            <br/>
-            
-            <label for="subtotal">
+              </label>
+              
+              <br/>
+              <br/>
+              
+              <label for="subtotal">
                 Sub Total
                 <input type="text" id="subtotal" value="0.00" readonly/>
-            </label>
+              </label>
+              
+              <br/>
+              
+              <label for="total">
+                Total
+                <input type="hidden" id="total" name="total" value="0.00" readonly/>
+              </label>
+    
+              <br/>
+              
+              <button type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
+            
+            </form>
             
             <br/>
-            
-            <label for="total">
-                Total
-                <input type="text" id="total" value="0.00" readonly/>
-            </label>
-            
-            <button type="submit" id="btnProceed" disabled>Add to shopping cart</button> 
-            
-        </form>
-        
-        <br/>
-        <button onClick="calcSub()">Calculate Cost</button>
-        <a role="button" href="Ebus1.php">Clear Choice</a>
-        
-        
+            <button onClick="calcSub()">Calculate Cost</button>
+            <a role="button" href="Ebus1.php">Clear Choice</a>
+
     </body>
 </html>
