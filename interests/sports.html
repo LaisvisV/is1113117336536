@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8"/>
         <title>Sports</title>
+        <link rel="stylesheet" href="int_pages.css" type="text/css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         
+        <!--adding bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
-    <style>
+        <!-- page piling -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.js"></script>
     
-    .headerstyling,.headerstyling:hover{
-      color:#000!important;
-      background-color:#ff9800!important
-    }
-    h1{
-      color: white;
-    }
-    
-    .content{
-        margin-left: 30%;
-    }
-    </style>
-    
+        <script type = "text/javascript">
+          $(document).ready(function() {
+  	        $('#pagepiling').pagepiling({
+              });
+          });
+        </script>
+
+      <style>
+        .headerstyling,.headerstyling:hover{
+          color:#000!important;
+          background-color:#ff9800!important
+          }
+          
+          h1{
+          color: white;
+          }
+      </style>
+
     </head>
     <body>
         
-    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
       <button class="w3-bar-item w3-button w3-large"
       onclick="w3_close()">Close &times;</button>
       <a href="../homepage.html" class="w3-bar-item w3-button">Homepage</a>
@@ -57,17 +71,26 @@
       document.getElementById("mySidebar").style.display = "none";
       document.getElementById("openNav").style.display = "inline-block";
     }
-    </script>
     
-    <div class="content">
-        <br/>
-        <h2 class="mainheading">Sports</h2>
+    </script>
+                
+                
+    <div id="pagepiling">
+    	<div class="section" id="section1">
+    	  <video autoplay loop preload="auto">
+          <source src="../media/923430564.mp4" type="video/mp4">
+          <source src="../media/923430564.webm" type="video/webm">
+          Sorry, your browser doesn't support HTML5 video.
+      </video>
         
-        <p><strong>Favourite Sport:</strong> Powerlifting</p>
-        <p><strong>Training:</strong> Used to</p>
+    	  Favourite Sport: Powerlifting
+    	</div>
+	<div class="section" id="section2">Want to visit: China</div>
+	<div class="section" id="section3">Settle in: United States</div>
+	   
+	<a href="../homepage.html">Home</a>
+	    </div>
     </div>
-    <center>
-        <a href="../homepage.html" class="btn btn-success">Home</a>
-    </center>
+
     </body>
 </html>
