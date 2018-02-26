@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Work - CV - Page 3</title>
+        <title>CV - Page 3</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         
@@ -12,67 +12,98 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
         <style>
-    
-        .headerstyling,.headerstyling:hover{
-          color:#000!important;
-          background-color:#ff9800!important
-        }
-        h1{
-          color: white;
-        }
-        .content{
-            margin-left: 30%;
-        }
+          .headerstyling,.headerstyling:hover{
+            color:#000!important;
+            background-color:#ff9800!important
+          }
+          h1{
+            color: white;
+          }
+          .content{
+              margin-left: 30%;
+              margin-right: 30%;
+          }
         </style>
         
     </head>
     
     <body>
+      <!-- Hamburger menu code from W3 Schools -->
+      
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+          <button class="w3-bar-item w3-button w3-large"
+          onclick="w3_close()">Close &times;</button>
+          <a href="../homepage.html" class="w3-bar-item w3-button">Homepage</a>
+          <a href="../cv/cv_page1.html" class="w3-bar-item w3-button">Curriculum Vitae</a>
+          <a href="../interests/sports.html" class="w3-bar-item w3-button">Sports</a>
+          <a href="../interests/travel.html" class="w3-bar-item w3-button">Travel</a>
+          <a href="../interests/cloud.html" class="w3-bar-item w3-button">Cloud Services</a>
+          <a href="../ebusiness/Ebus1.php" class="w3-bar-item w3-button">eBusiness</a>
+        </div>
         
-    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
-      <button class="w3-bar-item w3-button w3-large"
-      onclick="w3_close()">Close &times;</button>
-      <a href="../homepage.html" class="w3-bar-item w3-button">Homepage</a>
-      <a href="../cv/cv_page1.html" class="w3-bar-item w3-button">Curriculum Vitae</a>
-      <a href="../interests/sports.html" class="w3-bar-item w3-button">Sports</a>
-      <a href="../interests/travel.html" class="w3-bar-item w3-button">Travel</a>
-      <a href="../interests/cloud.html" class="w3-bar-item w3-button">Cloud Services</a>
-      <a href="../ebusiness/Ebus1.php" class="w3-bar-item w3-button">eBusiness</a>
-    </div>
+        <div id="main">
+    
+        <div class="headerstyling">
+          <button id="openNav" class="w3-button w3-orange w3-xlarge" onclick="w3_open()">&#9776;</button>
+          <div class="w3-container">
+            <center><h1>Curriculum Vitae</h1></center>
+          </div>
+        </div>
         
-    <div id="main">
-
-
-    <div class="headerstyling">
-      <button id="openNav" class="w3-button w3-orange w3-xlarge" onclick="w3_open()">&#9776;</button>
-      <div class="w3-container">
-        <center><h1>CV - Page 3</h1></center>
-      </div>
-    </div>
-        
-    <script>
-    function w3_open() {
-      document.getElementById("main").style.marginLeft = "25%";
-      document.getElementById("mySidebar").style.width = "25%";
-      document.getElementById("mySidebar").style.display = "block";
-      document.getElementById("openNav").style.display = 'none';
-    }
-    function w3_close() {
-      document.getElementById("main").style.marginLeft = "0%";
-      document.getElementById("mySidebar").style.display = "none";
-      document.getElementById("openNav").style.display = "inline-block";
-    }
-    </script>
+        <script>
+          function w3_open() {
+            document.getElementById("main").style.marginLeft = "25%";
+            document.getElementById("mySidebar").style.width = "25%";
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("openNav").style.display = 'none';
+          }
+          function w3_close() {
+            document.getElementById("main").style.marginLeft = "0%";
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("openNav").style.display = "inline-block";
+          }
+        </script>
+    
+      <!-- End of hamburger menu code -->
+      
     <div class="content">
         <br/>
+        <center>
         <h2 class="mainheading">Work Experience</h2>
+        </center>
+        </br>
+        <p><strong>Company:</strong> Vune AV, Media & IT</p>
+        <p><strong>Job Title:</strong> Self Employed</p>
+        <p><strong>Year:</strong> Current</p>
+        <p><strong>Job Duties:</strong> 
+        Live event AV technician services, mainly specialising in lighting and video. Aerial photography and videography. IT services including
+        general support and public WiFi hotspot installations.</p>
         
-        <p><strong>Company:</strong> CNS</p>
+        </br>
+        
+        <p><strong>Company:</strong> CNS Cashel</p>
         <p><strong>Job Title:</strong> Engineer</p>
         <p><strong>Year:</strong> 2015-2016</p>
+        <p><strong>Job Duties:</strong> 
+        Installation and maintenance of fixed wireless networks utilising the 5GHz spectrum on behalf of several ISPs in north Munster.
+        </p>
+        
+        </br>
+      
+          <!-- Dropdown menu using Bootstrap and W3 schools -->
+            <div class="dropdown" style="position: absolute;">
+              <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Go To Page
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="../cv/cv_page1.html">1) Personal Details</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="../cv/cv_page2.html">2) Education</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="../cv/cv_page3.html"><strong>3) Work Experience</strong></a></li>
+              </ul>
+            </div>
+      
+        <div style="position: relative; float: right; display: inline-block">
+          <a href="../homepage.html" class="btn btn-success">Home</a>
+        </div>
       </div>
-      <center>
-        <a href="../homepage.html" class="btn btn-success">Home</a>
-      </center>
     </body>
 </html>

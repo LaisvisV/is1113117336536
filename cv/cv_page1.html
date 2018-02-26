@@ -5,12 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         
+        
         <!--adding bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
+
     <style>
     
     .headerstyling,.headerstyling:hover{
@@ -49,7 +50,7 @@
     <div class="headerstyling">
       <button id="openNav" class="w3-button w3-orange w3-xlarge" onclick="w3_open()">&#9776;</button>
       <div class="w3-container">
-        <center><h1>CV - Page 1</h1></center>
+        <center><h1>Curriculum Vitae</h1></center>
       </div>
     </div>
         
@@ -70,8 +71,8 @@
     <!-- End of hamburger menu code -->
     
     <div class="content">
-        <br/>
         <center>
+        </br>
         <h2>Personal Details</h2>
         </center>
         <br/>
@@ -91,16 +92,30 @@
           <li>CSS</li>
           <li>WordPress</li>
           <li>Extensive knowledge of both Windows and MacOS</li>
-          <li>Event Lighting</li>
+          <li>Event AV, specialising in lighting and video</li>
           <li>Wireless Networking</li>
           <li>Media Production</li>
         </ul>
         </p>
-    </div>
+    
     </br>
-      <center>
-        <a href="cv_page2.html"Next</a>
-        <a href="cv_page2.html" class="btn btn-dark">Next</a>
-      </center>
+    
+    <!-- Dropdown menu using Bootstrap and W3 schools -->
+      <div class="dropdown" style="position: absolute;">
+        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Go To Page
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="../cv/cv_page1.html"><strong>1) Personal Details</strong></a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="../cv/cv_page2.html">2) Education</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="../cv/cv_page3.html">3) Work Experience</a></li>
+        </ul>
+      </div>
+
+      
+        <div style="position: relative; float: right; display: inline-block">
+          <a href="cv_page2.html"Next</a>
+          <a href="cv_page2.html" class="btn btn-dark">Next</a>
+        </div>
+      </div>
     </body>
 </html>
