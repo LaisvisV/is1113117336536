@@ -12,6 +12,15 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript" src="cost_calc.js"></script>
         
+        <style>
+        
+          .content{
+            margin-left:30%;
+            margin-right:30%;
+          }
+          
+          
+        </style>
     </head>
     
     <body>
@@ -50,49 +59,87 @@
       document.getElementById("openNav").style.display = "inline-block";
     }
     </script>
-        
-            <h4>Select a Product</h4>
+        <div class="content">
+          
+            <h2 style="text-align: center;">Select a Product</h2>
             
             <br/>
-            
+
             <form method="POST" action="Ebus2.php">
-              
+              <div style="margin-left:25%">
+              <table style="width:80%;">
+                <tr>
+                  <td>
               <label for="salesforce">
                 <input type="radio" id="salesforce" name="product" checked onClick="disablebtnProceed()"/>
-                SalesForce @ $100
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/83/Salesforce_logo.svg/1200px-Salesforce_logo.svg.png" width=70%>
+                <h6 style="text-align:bottom;">SalesForce @ $100</h6>
               </label>
-              
-              <br/>
-              
+                  </td>
+                  <td>
               <label for="aws">
                 <input type="radio" id="aws" name="product" onClick="disablebtnProceed()"/>
-                AWS @ $300
+                <img src="https://a0.awsstatic.com/main/images/logos/aws_logo_smile_1200x630.png" width=70%>
+                <h6 style="text-align:bottom;">Amazon Web Services @ $300</h6>
               </label>
-              
-              <br/>
+                 </td>
+              </tr>
+              <tr>
+                <td>
+              <label for="cloud9">
+                <input type="radio" id="cloud9" name="product" onClick="disablebtnProceed()"/>
+                <img src="https://static.c9.io/nc-3.1.4109-2ffb85e2-wf/static/plugins/c9.profile/static/images/cloud9-logo.svg" width=70%>
+                <h6 style="text-align:bottom;">Cloud9 @ $200</h6>
+              </label>
+                </td>
+                <td>
+              <label for="gmail">
+                <input type="radio" id="gmail" name="product" onClick="disablebtnProceed()"/>
+                <img style="margin-left:5%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/New_Logo_Gmail.svg/2000px-New_Logo_Gmail.svg.png" width=50%>
+                <h6 style="text-align:bottom; margin-left:40px;">Gmail @ $400</h6>
+              </label>
+                </td>
+              </table>
+              </div>
+
               <br/>
               
               <label for="subtotal">
                 Sub Total
-                <input type="text" id="subtotal" value="0.00" readonly/>
+                <input style="margin-left:50px" type="text" id="subtotal" value="$0.00" readonly/>
+              </label>
+              
+              <br/>
+              
+              <label for="discount">
+                Discount (5%)
+                <input style="margin-left:11px" type="text" id="discount" value="$0.00" readonly/>
+              </label>
+              
+              <br/>
+              
+              <label for="vat">
+                VAT (10%)
+                <input style="margin-left:38px" type="text" id="vat" value="$0.00" readonly/>
               </label>
               
               <br/>
               
               <label for="total">
-                Total
-                <input type="hidden" id="total" name="total" value="0.00" readonly/>
+                <strong>Total</strong>
+                <input style="margin-left:78px" type="text" id="total" value="$0.00" readonly/>
               </label>
-    
-              <br/>
-              
-              <button type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
-            
-            </form>
             
             <br/>
-            <button onClick="calcSub()">Calculate Cost</button>
-            <a role="button" href="Ebus1.php">Clear Choice</a>
+            <br/>
+            <br/>
 
+            
+            <button type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
+            
+            </form>
+            <button onClick="calcSub()">Calculate Cost</button>
+            <button onClick="refresh()" style="float:right; position:relative;">Clear Choice</button>
+      </div>
     </body>
 </html>
