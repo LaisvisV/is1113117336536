@@ -1,3 +1,8 @@
+<?php
+// Start the session
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -127,7 +132,7 @@
               
               <label for="total">
                 <strong>Total</strong>
-                <input style="margin-left:78px" type="text" id="total" value="$0.00" readonly/>
+                <input style="margin-left:78px" type="text" id="total" name="total" value="$0.00" readonly/>
               </label>
             
             <br/>

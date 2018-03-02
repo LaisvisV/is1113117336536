@@ -2,6 +2,7 @@
 // Start the session
 session_start();
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -70,11 +71,11 @@ session_start();
             
             <form action="Ebus3.php" method="POST">
                 <label for="name">Name</label>
-                <input style="margin-left:20px" type="text" id="name" placeholder="Name">
+                <input style="margin-left:20px" type="text" name="name" placeholder="Name">
                 <br/>
                 <br/>    
                 <label for="email">Email</label>
-                <input style="margin-left:22px" type="text" id="email" placeholder="Email address">
+                <input style="margin-left:22px" type="email" name="email" placeholder="Email address">
                 <br/>
                 <br/>
                 <label for="user_pin">PIN</label>
@@ -90,10 +91,10 @@ session_start();
         </div>
         
         <?php
-            // set session variables
-            $_SESSION["name"] = $_POST["name"];
-            $_SESSION["email"] = $_POST["email"];
-            $_SESSION["total"] = $_POST["total"];
+          // set session variables
+          $_SESSION["name"] = $_POST["name"];
+          $_SESSION["email"] = $_POST["email"];
+          $_SESSION["total"] = $_POST["total"];
         ?>
         
     </body>
