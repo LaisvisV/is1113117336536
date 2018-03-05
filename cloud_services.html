@@ -4,6 +4,7 @@
         <title>Larry's Cloud Services Co. </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href='https://fonts.googleapis.com/css?family=Baumans' rel='stylesheet'>
         
     <style>
     
@@ -11,16 +12,54 @@
     color:#000!important;
     background-color:#ff9800!important
     }
+    
     h1{
     color: white;
     }
     
     .content{
         margin-left: 30%;
+        margin-right: 30%;
+    }
+    
+    .section1{
+      height: 600px;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      z-index: 0;
+    }
+    
+    .section1text{
+      position: absolute;
+      z-index: 1;
+      top: 25%;
+      left: 2%;
+      width: 100%;
+    }
+    
+    .section2{
+      height: 400px;
+      width: 100%;
+      background-color: rgb(255, 180, 114);
+      position: relative;
+    }
+    
+    h2{
+      font-family: 'Baumans';
+      font-size: 160px;
+      color: white;
+    }
+    
+    h3{
+      margin-top: -5%;
+      margin-left: 700px;
+      font-family: 'Baumans';
+      font-size: 70px;
+      color: white;
     }
     
     </style>
-    
     </head>
     <body>
         
@@ -42,34 +81,35 @@
     <div class="headerstyling">
       <button id="openNav" class="w3-button w3-orange w3-xlarge" onclick="w3_open()">&#9776;</button>
       <div class="w3-container">
-        <center><h1>Larry's Cloud Services Co.</h1></center>
+        <img src=../media/larryscloudservices.png width=15% style="margin-left: auto; margin-right: auto; display: block">
       </div>
     </div>
         
     <script>
     function w3_open() {
-      document.getElementById("main").style.marginLeft = "25%";
-      document.getElementById("mySidebar").style.width = "25%";
       document.getElementById("mySidebar").style.display = "block";
-      document.getElementById("openNav").style.display = 'none';
     }
     function w3_close() {
-      document.getElementById("main").style.marginLeft = "0%";
       document.getElementById("mySidebar").style.display = "none";
-      document.getElementById("openNav").style.display = "inline-block";
     }
     </script>
-    <div class="content">
-        <br/>
-        <h2 class="mainheading">Cloud Services</h2>
-        
-        <p><strong>Favourite Cloud Service:</strong> C9</p>
-        <p><strong>Least favourite cloud service:</strong> Heroku</p>
-
-    </div>
-    
-        <center>
-        <a href="../homepage.html" class="btn btn-success">Home</a>
-        </center>
+     
+     <div class="section1">
+       <video onloadeddata="this.play();" playsinline loop muted>
+          <source src="../media/Ethernet1.mp4" type="video/mp4" />
+          <source src="../media/722779149.webm" type="video/webm" />
+          Your browser does not support the HTML5 video tag or the file format of this video.
+      </video>
+     </div>
+     
+     <div class="section1text">
+       <h2>A new era...</h2>
+       <h3>in cloud computing</h3>
+     </div>
+     
+     <div class="section2">
+       
+     </div>
+     
     </body>
 </html>
