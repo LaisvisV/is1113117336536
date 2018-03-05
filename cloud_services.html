@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link href='https://fonts.googleapis.com/css?family=Baumans' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Cedarville Cursive' rel='stylesheet'>
         
     <style>
     
@@ -13,9 +14,6 @@
     background-color:#ff9800!important
     }
     
-    h1{
-    color: white;
-    }
     
     .content{
         margin-left: 30%;
@@ -23,7 +21,7 @@
     }
     
     .section1{
-      height: 600px;
+      height: 700px;
       width: 100%;
       position: relative;
       overflow: hidden;
@@ -41,8 +39,19 @@
     .section2{
       height: 400px;
       width: 100%;
-      background-color: rgb(255, 180, 114);
+      background-color: rgb(252, 214, 164);
       position: relative;
+      z-index: 2;
+      margin-top: -10px;
+      text-align: center;
+    }
+    
+    .section2text{
+      height: 230px;
+      width: 600px;
+      border: 2px solid white;
+      margin-left: 10%;
+      padding: 10px;
     }
     
     h2{
@@ -52,18 +61,21 @@
     }
     
     h3{
-      margin-top: -5%;
-      margin-left: 700px;
       font-family: 'Baumans';
       font-size: 70px;
       color: white;
+    }
+    
+    p{
+      color: white;
+      font-size: 20px;
     }
     
     </style>
     </head>
     <body>
         
-    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none; z-index:10" id="mySidebar">
       <button class="w3-bar-item w3-button w3-large"
       onclick="w3_close()">Close &times;</button>
       <a href="../homepage.html" class="w3-bar-item w3-button">Homepage</a>
@@ -104,11 +116,23 @@
      
      <div class="section1text">
        <h2>A new era...</h2>
-       <h3>in cloud computing</h3>
+       <h3 style="margin-top: -5%; margin-left: 700px;">in cloud computing</h3>
      </div>
      
      <div class="section2">
+       <h3>Who we are</h3>
        
+       <div class="section2text">
+         <p>
+           <strong>Larry's Cloud Services Co.</strong> was established in early 2018 to primarily serve
+           the growing demand of online and cloud services in the Irish market.
+           From it's humble origins in the B.02 lab, the company has grown from strength
+           to strength and is now one of the leaders of cloud services in Ireland and abroad.
+         </p>
+       </div>
+       
+       <img style="position: absolute; margin-top: -10%; margin-left: 5%;  z-index: 3;" src="https://www.ucc.ie/en/media/2017siteassets/images/ucc_logo.svg" width=15%>
+       <img style="position: absolute; margin-top: -10%; margin-left: 25%; z-index: 3;" src="http://summeronquad.ucc.ie/wp-content/uploads/2016/06/CUBS-2017-logo.png" width=15%>
      </div>
      
     </body>
