@@ -18,27 +18,31 @@ session_start();
         <script type="text/javascript" src="ebus2_validator.js"></script>
         
         <style>
-        
           .content{
             margin-left:30%;
             margin-right:30%;
           }
-          
+          .menumargin{
+            margin-left:5%;
+          }
         </style>
         
     </head>
     <body>
         
-    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none; z-index:10" id="mySidebar">
       <button class="w3-bar-item w3-button w3-large"
       onclick="w3_close()">Close &times;</button>
+      <strong class="menumargin">Personal</strong>
       <a href="../homepage.html" class="w3-bar-item w3-button">Homepage</a>
       <a href="../cv/cv_page1.html" class="w3-bar-item w3-button">Curriculum Vitae</a>
+      <strong class="menumargin">Interests</strong>
       <a href="../interests/sports.html" class="w3-bar-item w3-button">Sports</a>
       <a href="../interests/travel.html" class="w3-bar-item w3-button">Travel</a>
-      <a href="../interests/cloud.html" class="w3-bar-item w3-button">Cloud Interests</a>
+      <a href="../interests/cloud.html" class="w3-bar-item w3-button">Cloud</a>
+      <strong class="menumargin">eBusiness</strong>
       <a href="../cloud_services.html" class="w3-bar-item w3-button">Cloud Services</a>
-      <a href="../ebusiness/Ebus1.php" class="w3-bar-item w3-button">eBusiness</a>
+      <a href="../ebusiness/Ebus1.php" class="w3-bar-item w3-button">Products</a>
     </div>
         
     <div id="main">
@@ -46,7 +50,7 @@ session_start();
     <div class="headerstyling">
       <button id="openNav" class="w3-button w3-orange w3-xlarge" onclick="w3_open()">&#9776;</button>
       <div class="w3-container">
-        <center><h1>Payment Details</h1></center>
+        <img src=../media/larryscloudservices.png width=15% style="margin-left: auto; margin-right: auto; display: block">
       </div>
     </div>
         

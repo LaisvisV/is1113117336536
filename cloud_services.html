@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link href='https://fonts.googleapis.com/css?family=Baumans' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Cedarville Cursive' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
         
       <style>
         .headerstyling,.headerstyling:hover{
@@ -81,6 +81,10 @@
           background-color: rgb(255, 182, 175)
         }
         
+        .section8color{
+          background-color: rgb(249, 223, 152);
+        }
+        
         .sectionheaderleft{
           margin-top: 2%;
           margin-left: 10%;
@@ -141,153 +145,190 @@
           color: white;
           font-size: 20px;
         }
+        
+        .menumargin{
+          margin-left: 5%;
+        }
+        
+        .actionbuttons{
+          font-size:30px; 
+          text-decoration:none; 
+          color:rgb(069,068,067); 
+          font-family:Roboto Condensed;
+          border: 2px solid;
+          border-color:rgb(069,068,067);
+          padding-left: 35px;
+          padding-right: 35px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
       </style>
     </head>
     
     <body>
-        
-    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none; z-index:10" id="mySidebar">
-      <button class="w3-bar-item w3-button w3-large"
-      onclick="w3_close()">Close &times;</button>
-      <a href="../homepage.html" class="w3-bar-item w3-button">Homepage</a>
-      <a href="../cv/cv_page1.html" class="w3-bar-item w3-button">Curriculum Vitae</a>
-      <a href="../interests/sports.html" class="w3-bar-item w3-button">Sports</a>
-      <a href="../interests/travel.html" class="w3-bar-item w3-button">Travel</a>
-      <a href="../interests/cloud.html" class="w3-bar-item w3-button">Cloud Interests</a>
-      <a href="../cloud_services.html" class="w3-bar-item w3-button">Cloud Services</a>
-      <a href="../ebusiness/Ebus1.php" class="w3-bar-item w3-button">eBusiness</a>
-    </div>
-        
-    <div id="main">
-
-    <div class="headerstyling">
-      <button id="openNav" class="w3-button w3-orange w3-xlarge" onclick="w3_open()">&#9776;</button>
-      <div class="w3-container">
-        <img src=../media/larryscloudservices.png width=15% style="margin-left: auto; margin-right: auto; display: block">
+      <!-- Hamburger menu code adopted from W3 Schools -->
+      <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none; z-index:10" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large"
+        onclick="w3_close()">Close &times;</button>
+        <strong class="menumargin">Personal</strong>
+        <a href="../homepage.html" class="w3-bar-item w3-button">Homepage</a>
+        <a href="../cv/cv_page1.html" class="w3-bar-item w3-button">Curriculum Vitae</a>
+        <strong class="menumargin">Interests</strong>
+        <a href="../interests/sports.html" class="w3-bar-item w3-button">Sports</a>
+        <a href="../interests/travel.html" class="w3-bar-item w3-button">Travel</a>
+        <a href="../interests/cloud.html" class="w3-bar-item w3-button">Cloud</a>
+        <strong class="menumargin">eBusiness</strong>
+        <a href="../cloud_services.html" class="w3-bar-item w3-button">Cloud Services</a>
+        <a href="../ebusiness/Ebus1.php" class="w3-bar-item w3-button">Products</a>
       </div>
-    </div>
-        
-    <script>
-      function w3_open() {
-        document.getElementById("mySidebar").style.display = "block";
-      }
-      function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-      }
-    </script>
-     
-     <div class="section1">
-       <video onloadeddata="this.play();" playsinline loop muted>
-          <source src="../media/Ethernet1.mp4" type="video/mp4" />
-          <source src="../media/722779149.webm" type="video/webm" />
-          Your browser does not support the HTML5 video tag or the file format of this video.
-      </video>
-     </div>
-     
-     <div class="section1text">
-       <h2>A new era...</h2>
-       <h3 style="margin-top: -5%; margin-left: 700px;">in cloud computing</h3>
-     </div>
-     
-     <div class="section2">
-       <h3>Who we are</h3>
-       
-       <div class="section2text">
-         <p>
-           <strong>Larry's Cloud Services Co.</strong> was established in early 2018 to primarily serve
-           the growing demand of online and cloud services in the Irish market.
-           From it's humble origins in the B.02 lab, the company has grown from strength
-           to strength and is now one of the leaders of cloud services in Ireland and abroad.
-         </p>
-       </div>
-       
-       <img style="position: absolute; margin-top: -10%; margin-left: 5%;  z-index: 3;" src="https://www.ucc.ie/en/media/2017siteassets/images/ucc_logo.svg" width=15%>
-       <img style="position: absolute; margin-top: -10%; margin-left: 25%; z-index: 3;" src="http://summeronquad.ucc.ie/wp-content/uploads/2016/06/CUBS-2017-logo.png" width=15%>
-     </div>
-     
-     <div class="sections section3color">
-       <div class="sectionheaderleft">
-         <h3>Software as a Service</h3>
-       </div>
-       
-       <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/83/Salesforce_logo.svg/1200px-Salesforce_logo.svg.png" width=30% 
-            style="margin-top: 10%; margin-left: 12.5%">
-        
-        <div class="sectiontext section3text">
-          <p>
-            Salesforce is a well-established supplier of <strong>Software as a Service (SaaS)</strong> solutions.
-            Their main focus is CRM (Customer Relations Management) software, with their goal being to provide a platform
-            for effective CRM management, in the cloud, which can be used by SMEs as well as Multinational companies.
-            Essentially, SaaS means that the software package sold is actually located in the cloud, and for a fee
-            you are allowed access to it. Microsoft has recently shifted their business model with Office365 to a similar system.
-          </p>
-          <a href="https://www.salesforce.com/eu/"><img src="../media/readmorebutton.png" width=75%></a>
-        </div>    
-     </div>
-     
-     <div class="sections section4color">
-       <div class="sectionheaderright">
-         <h3>Platform as a Service</h3>
-       </div>
-       
-       <img src="https://static.c9.io/nc-3.1.4109-2ffb85e2-wf/static/plugins/c9.profile/static/images/cloud9-logo.svg" width=30% 
-            style="margin-top: 10%; margin-left: 57.5%; position: absolute;">
-       
-       <div class="sectiontext section4text" style="height: 380px;">
-         <p>
-           A great example of a <strong>Platform as a Service (PaaS)</strong> is also one of my personal favourites,
-           the Cloud9 IDE. Traditionally IDEs (Integrated Development Environments) were desktop applications, but due to
-           advancements in cloud technology a service such as Cloud9 was created, allowing developers to work freely, anytime,
-           anywhere, on any device. What a Platform as a Service does is it allows developers to create and run their work
-           in the cloud, without having to set up seperate applications or services for programming and deployment.
-         </p>
-         <a href="https://aws.amazon.com/cloud9/"><img src="../media/readmorebutton.png" width=75%></a>
-       </div>
-     </div>
-     
-     <div class="sections section5color">
-       <div class="sectionheaderleft">
-         <h3>Infrastructure as a Service</h3>
-       </div>
-       
-       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png" width=30% 
-            style="margin-top: 12.5%; margin-left: 12.5%; position: absolute;">
-       
-       <div class="sectiontext section5text">
-         <p>
-           Amazon Web Services is the dominant player in the <strong>Infrastructure as a Service (IaaS)</strong> 
-           market. It offers a complete server infrastructure and cloud computing services to customers of all sizes.
-           Even popular companies such as Netflix rely on AWS infrastructure to power their services.
-           What Infrastructure as a Service offers is physical server space and bandwidth, along with firewalls, all
-           from one convenient cloud service. This eliminates the need for local servers for many companies, which
-           can become costly.
-         </p>
-         <a href="https://aws.amazon.com/"><img src="../media/readmorebutton.png" width=75%></a>
-       </div>
-     </div>
-     
-     <div class="sections section6color" style="height: 500px;">
-       <img style="margin-top: 5%; margin-left: 17.5%;" src="../media/iaasinfographic.png" width=65%>
-       <i style="margin-top: 470px; position: absolute; font-color: grey; font-size:9px;">*Infographic adopted from Microsoft Azure</i>
-     </div>
-       
-      <div class="sections section7color">
-        <div class="sectionheaderright" style="margin-left: 40%">
-          <h3>Communication as a Service</h3>
-        </div>
-        
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/New_Logo_Gmail.svg/2000px-New_Logo_Gmail.svg.png" width=28% 
-            style="margin-top: 10%; margin-left: 57.5%; position: absolute;">
-        
-        <div class="sectiontext section7text">
-          <p>
-            <strong>Communication as a Service (CaaS)</strong> are essentially any services that enable businesses to communicate. These services may
-            include VoIP (Voice over IP) software such as Skype, and various email providers. Many of these email services are free,
-            a prime example of this being Gmail, one of the most popular cloud-based email clients in the world. After being established in 2004 by Google,
-            it quickly grew to become the most well-known and used email client, bypassing Yahoo and AOL who were dominant at the time.
-          </p>
-          <a href="https://en.wikipedia.org/wiki/Gmail/"><img src="../media/readmorebutton.png" width=75%></a>
+          
+      <div id="main">
+  
+      <div class="headerstyling">
+        <button id="openNav" class="w3-button w3-orange w3-xlarge" onclick="w3_open()">&#9776;</button>
+        <div class="w3-container">
+          <img src=../media/larryscloudservices.png width=15% style="margin-left: auto; margin-right: auto; display: block">
         </div>
       </div>
+          
+      <script>
+        function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+        }
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+        }
+      </script>
+       
+       <div class="section1">
+         <video onloadeddata="this.play();" playsinline loop muted>
+            <source src="../media/Ethernet1.mp4" type="video/mp4" />
+            <source src="../media/722779149.webm" type="video/webm" />
+            Your browser does not support the HTML5 video tag or the file format of this video.
+        </video>
+       </div>
+       
+       <div class="section1text">
+         <h2 style="margin-left:5%">A new era...</h2>
+         <h3 style="margin-top: -5%; margin-left: 700px;">in cloud computing</h3>
+       </div>
+       
+       <div class="section2">
+         <h3>Who we are</h3>
+         
+         <div class="section2text">
+           <p>
+             <strong>Larry's Cloud Services Co.</strong> was established in early 2018 to primarily serve
+             the growing demand of online and cloud services in the Irish market.
+             From it's humble origins in the B.02 lab, the company has grown from strength
+             to strength and is now one of the leaders of cloud services in Ireland and abroad.
+           </p>
+         </div>
+         
+         <img style="position: absolute; margin-top: -10%; margin-left: 5%;  z-index: 3;" src="https://www.ucc.ie/en/media/2017siteassets/images/ucc_logo.svg" width=15%>
+         <img style="position: absolute; margin-top: -10%; margin-left: 25%; z-index: 3;" src="http://summeronquad.ucc.ie/wp-content/uploads/2016/06/CUBS-2017-logo.png" width=15%>
+       </div>
+       
+       <div class="sections section3color">
+         <div class="sectionheaderleft">
+           <h3>Software as a Service</h3>
+         </div>
+         
+         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/83/Salesforce_logo.svg/1200px-Salesforce_logo.svg.png" width=30% 
+              style="margin-top: 10%; margin-left: 12.5%">
+          
+          <div class="sectiontext section3text">
+            <p>
+              Salesforce is a well-established supplier of <strong>Software as a Service (SaaS)</strong> solutions.
+              Their main focus is CRM (Customer Relations Management) software, with their goal being to provide a platform
+              for effective CRM management, in the cloud, which can be used by SMEs as well as Multinational companies.
+              Essentially, SaaS means that the software package sold is actually located in the cloud, and for a fee
+              you are allowed access to it. Microsoft has recently shifted their business model with Office365 to a similar system.
+            </p>
+            <a class="actionbuttons" href="https://www.salesforce.com/eu/" style="position:absolute; margin-top:5%; margin-left:-16%">
+              READ MORE
+          </a>
+          </div>    
+       </div>
+       
+       <div class="sections section4color">
+         <div class="sectionheaderright">
+           <h3>Platform as a Service</h3>
+         </div>
+         
+         <img src="https://static.c9.io/nc-3.1.4109-2ffb85e2-wf/static/plugins/c9.profile/static/images/cloud9-logo.svg" width=30% 
+              style="margin-top: 10%; margin-left: 57.5%; position: absolute;">
+         
+         <div class="sectiontext section4text" style="height: 380px;">
+           <p>
+             A great example of a <strong>Platform as a Service (PaaS)</strong> is also one of my personal favourites,
+             the Cloud9 IDE. Traditionally IDEs (Integrated Development Environments) were desktop applications, but due to
+             advancements in cloud technology a service such as Cloud9 was created, allowing developers to work freely, anytime,
+             anywhere, on any device. What a Platform as a Service does is it allows developers to create and run their work
+             in the cloud, without having to set up seperate applications or services for programming and deployment.
+           </p>
+           <a class="actionbuttons" href="https://aws.amazon.com/cloud9/" style="position:absolute; margin-top:2.5%; margin-left:-16%">
+              READ MORE
+          </a>
+         </div>
+       </div>
+       
+       <div class="sections section5color">
+         <div class="sectionheaderleft">
+           <h3>Infrastructure as a Service</h3>
+         </div>
+         
+         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png" width=30% 
+              style="margin-top: 12.5%; margin-left: 12.5%; position: absolute;">
+         
+         <div class="sectiontext section5text">
+           <p>
+             Amazon Web Services is the dominant player in the <strong>Infrastructure as a Service (IaaS)</strong> 
+             market. It offers a complete server infrastructure and cloud computing services to customers of all sizes.
+             Even popular companies such as Netflix rely on AWS infrastructure to power their services.
+             What Infrastructure as a Service offers is physical server space and bandwidth, along with firewalls, all
+             from one convenient cloud service. This eliminates the need for local servers for many companies, which
+             can become costly.
+           </p>
+           <a class="actionbuttons" href="https://aws.amazon.com/" style="position:absolute; margin-top:5%; margin-left:-16%">
+              READ MORE
+            </a>
+         </div>
+       </div>
+       
+       <!-- Infographic got from Microsoft Azure, amended by myself -->
+       <div class="sections section6color" style="height: 500px;">
+         <img style="margin-top: 5%; margin-left: 17.5%;" src="../media/iaasinfographic.png" width=65%>
+         <i style="margin-top: 470px; position: absolute; font-color: grey; font-size:9px;">*Infographic adopted from Microsoft Azure</i>
+       </div>
+         
+        <div class="sections section7color">
+          <div class="sectionheaderright" style="margin-left: 40%">
+            <h3>Communication as a Service</h3>
+          </div>
+          
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/New_Logo_Gmail.svg/2000px-New_Logo_Gmail.svg.png" width=28% 
+              style="margin-top: 10%; margin-left: 57.5%; position: absolute;">
+          
+          <div class="sectiontext section7text">
+            <p>
+              <strong>Communication as a Service (CaaS)</strong> are essentially any services that enable businesses to communicate. These services may
+              include VoIP (Voice over IP) software such as Skype, and various email providers. Many of these email services are free,
+              a prime example of this being Gmail, one of the most popular cloud-based email clients in the world. After being established in 2004 by Google,
+              it quickly grew to become the most well-known and used email client, bypassing Yahoo and AOL who were dominant at the time.
+            </p>
+            <a class="actionbuttons" href="https://en.wikipedia.org/wiki/Gmail/" style="position:absolute; margin-top:5%; margin-left:-16%">
+              READ MORE
+            </a>
+          </div>
+        </div>
+        
+        <div class="sections section8color" style="height:350px; text-align: center">
+          <h2>Ready for the future?</h2>
+          
+          <a class="actionbuttons" href="../ebusiness/Ebus1.php">
+              EXPLORE ALL PRODUCTS
+          </a>
+        </div>
     </body>
 </html>
