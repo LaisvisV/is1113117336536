@@ -25,6 +25,20 @@ session_start();
           .menumargin{
             margin-left:5%;
           }
+          #btnPurchase{
+            background-color: rgb(76, 175, 80);
+            color: white;
+            border: 2px solid white;
+            padding: 10px;
+            border-radius: 8px;
+          }
+          #btnValidate{
+            background-color: rgb(61, 125, 255);
+            color: white;
+            border: 2px solid white;
+            padding: 10px;
+            border-radius: 8px;
+          }
         </style>
         
     </head>
@@ -86,7 +100,7 @@ session_start();
             </form>
             
             <br/>
-            <button onClick="validateDetails()">Validate</button>
+            <button id="btnValidate" onClick="validateDetails()">Validate</button>
         </div>
         
         <?php

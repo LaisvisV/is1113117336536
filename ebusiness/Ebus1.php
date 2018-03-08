@@ -42,6 +42,14 @@ session_start();
             padding: 10px;
             border-radius: 8px;
           }
+          
+          #btnClear{
+            background-color: white;
+            color: rgb(255, 61, 64);
+            border: 2px solid rgb(255, 61, 64);
+            padding: 10px;
+            border-radius: 8px;
+          }
         </style>
   </head>
     
@@ -159,7 +167,7 @@ session_start();
             
             </form>
             <button id="btnCalculate" onClick="calcSub()">Calculate Cost</button>
-            <button onClick="refresh()" style="float:right; position:relative;">Clear Choice</button>
+            <button id="btnClear" onClick="refresh()" style="float:right; position:relative;">Clear Choice</button>
       </div>
     </body>
 </html>
