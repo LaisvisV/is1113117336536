@@ -5,17 +5,18 @@ session_start();
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8"/>
         <title>Receipt</title>
         
         <!--Styling using both my own CSS and also W3 Schools CSS-->
-        <link rel="stylesheet" href="/mystylesheet.css" type="text/css"
+        <link rel="stylesheet" href="/mystylesheet.css" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link href='https://fonts.googleapis.com/css?family=Cedarville Cursive' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Cedarville+Cursive' rel='stylesheet'>
         
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="cost_calc.js"></script>
+        <script src="cost_calc.js"></script>
         
         <style>
         
@@ -48,13 +49,10 @@ session_start();
       <a href="../ebusiness/Ebus1.php" class="w3-bar-item w3-button">Products</a>
     </div>
         
-    <div id="main">
-
-
     <div class="headerstyling">
       <button id="openNav" class="w3-button w3-orange w3-xlarge" onclick="w3_open()">&#9776;</button>
       <div class="w3-container">
-        <img src=../media/larryscloudservices.png width=15% style="margin-left: auto; margin-right: auto; display: block">
+        <img src=../media/larryscloudservices.png width=15% style="margin-left: auto; margin-right: auto; display: block" alt="Larry's Cloud Services">
       </div>
     </div>
         

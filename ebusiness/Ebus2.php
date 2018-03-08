@@ -6,16 +6,17 @@ session_start();
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8"/>
         <title>Payment Details</title>
         
         <!--Styling using both my own CSS and also W3 Schools CSS-->
-        <link rel="stylesheet" href="/mystylesheet.css" type="text/css"
+        <link rel="stylesheet" href="/mystylesheet.css" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="ebus2_validator.js"></script>
+        <script src="ebus2_validator.js"></script>
         
         <style>
           .content{
@@ -58,13 +59,11 @@ session_start();
       <a href="../cloud_services.html" class="w3-bar-item w3-button">Cloud Services</a>
       <a href="../ebusiness/Ebus1.php" class="w3-bar-item w3-button">Products</a>
     </div>
-        
-    <div id="main">
-
+  
     <div class="headerstyling">
       <button id="openNav" class="w3-button w3-orange w3-xlarge" onclick="w3_open()">&#9776;</button>
       <div class="w3-container">
-        <img src=../media/larryscloudservices.png width=15% style="margin-left: auto; margin-right: auto; display: block">
+        <img src=../media/larryscloudservices.png width=15% style="margin-left: auto; margin-right: auto; display: block" alt="Larry's Cloud Services">
       </div>
     </div>
         
@@ -78,28 +77,30 @@ session_start();
     </script>
         
         <div class="content">
-            <br/>
+            <br>
             <h3 style="text-align:center;">Please enter your payment details</h3>
-            <br/>
+            <br>
+            
+            <!-- Input type selected as required to ensure extra validation by default -->
             
             <form action="Ebus3.php" method="POST">
-                <label for="name">Name</label>
+                <label>Name</label>
                 <input style="margin-left:20px" type="text" name="name" placeholder="Name">
-                <br/>
-                <br/>    
-                <label for="email">Email</label>
+                <br>
+                <br>    
+                <label>Email</label>
                 <input style="margin-left:22px" type="email" name="email" placeholder="Email address">
-                <br/>
-                <br/>
-                <label for="user_pin">PIN</label>
+                <br>
+                <br>
+                <label>PIN</label>
                 <input style="margin-left:37px" type="password" id="user_pin" placeholder="Card PIN" maxlength="4">
-                <br/>
-                <br/>
+                <br>
+                <br>
                 <button type="submit" id="btnPurchase" disabled>Proceed with Purchase</button>
               
             </form>
             
-            <br/>
+            <br>
             <button id="btnValidate" onClick="validateDetails()">Validate</button>
         </div>
         

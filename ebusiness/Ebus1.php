@@ -4,18 +4,19 @@ session_start();
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+        <meta charset="utf-8"/>
         <title>Select Product</title>
         
         <!--Styling using both my own CSS and also W3 Schools CSS-->
-        <link rel="stylesheet" href="/mystylesheet.css" type="text/css"
+        <link rel="stylesheet" href="/mystylesheet.css" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="cost_calc.js"></script>
+        <script src="cost_calc.js"></script>
         
         <style>
           .content{
@@ -69,13 +70,10 @@ session_start();
       <a href="../ebusiness/Ebus1.php" class="w3-bar-item w3-button">Products</a>
     </div>
         
-    <div id="main">
-
-
     <div class="headerstyling">
       <button id="openNav" class="w3-button w3-orange w3-xlarge" onclick="w3_open()">&#9776;</button>
       <div class="w3-container">
-        <img src=../media/larryscloudservices.png width=15% style="margin-left: auto; margin-right: auto; display: block">
+        <img src=../media/larryscloudservices.png width=15% style="margin-left: auto; margin-right: auto; display: block" alt="Larry's Cloud Services">
       </div>
     </div>
         
@@ -91,78 +89,78 @@ session_start();
           
             <h2 style="text-align: center;">Select a Product</h2>
             
-            <br/>
+            <br>
 
             <form method="POST" action="Ebus2.php">
               <div style="margin-left:25%">
               <table style="width:80%;">
                 <tr>
                   <td>
-              <label for="salesforce">
+              <label for="salesforce" style="text-align:center">
                 <input type="radio" id="salesforce" name="product" checked onClick="disablebtnProceed()"/>
-                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/83/Salesforce_logo.svg/1200px-Salesforce_logo.svg.png" width=70%>
-                <h6 style="text-align:bottom;">SalesForce @ $100</h6>
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/83/Salesforce_logo.svg/1200px-Salesforce_logo.svg.png" width=70% alt="Salesforce">
+                SalesForce @ $100
               </label>
                   </td>
                   <td>
-              <label for="aws">
+              <label for="aws" style="text-align:center">
                 <input type="radio" id="aws" name="product" onClick="disablebtnProceed()"/>
-                <img src="https://a0.awsstatic.com/main/images/logos/aws_logo_smile_1200x630.png" width=70%>
-                <h6 style="text-align:bottom;">Amazon Web Services @ $300</h6>
+                <img src="https://a0.awsstatic.com/main/images/logos/aws_logo_smile_1200x630.png" width=70% alt="Amazon Web Services">
+                Amazon Web Services @ $300
               </label>
                  </td>
               </tr>
               <tr>
                 <td>
-              <label for="cloud9">
+              <label for="cloud9" style="text-align:center">
                 <input type="radio" id="cloud9" name="product" onClick="disablebtnProceed()"/>
-                <img src="https://static.c9.io/nc-3.1.4109-2ffb85e2-wf/static/plugins/c9.profile/static/images/cloud9-logo.svg" width=70%>
-                <h6 style="text-align:bottom;">Cloud9 @ $200</h6>
+                <img src="https://static.c9.io/nc-3.1.4109-2ffb85e2-wf/static/plugins/c9.profile/static/images/cloud9-logo.svg" width=70% alt="Cloud9">
+                Cloud9 @ $200
               </label>
                 </td>
                 <td>
-              <label for="gmail">
+              <label for="gmail" style="text-align:center">
                 <input type="radio" id="gmail" name="product" onClick="disablebtnProceed()"/>
-                <img style="margin-left:5%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/New_Logo_Gmail.svg/2000px-New_Logo_Gmail.svg.png" width=50%>
-                <h6 style="text-align:bottom; margin-left:40px;">Gmail @ $400</h6>
+                <img style="margin-left:5%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/New_Logo_Gmail.svg/2000px-New_Logo_Gmail.svg.png" width=50% alt="Gmail">
+                <br>
+                Gmail @ $400
               </label>
                 </td>
               </table>
               </div>
 
-              <br/>
+              <br>
               
               <label for="subtotal">
                 Sub Total
                 <input style="margin-left:50px" type="text" id="subtotal" value="$0.00" readonly/>
               </label>
               
-              <br/>
+              <br>
               
               <label for="discount">
                 Discount (5%)
                 <input style="margin-left:11px" type="text" id="discount" value="$0.00" readonly/>
               </label>
               
-              <br/>
+              <br>
               
               <label for="vat">
                 VAT (10%)
                 <input style="margin-left:38px" type="text" id="vat" value="$0.00" readonly/>
               </label>
               
-              <br/>
+              <br>
               
               <label for="total">
                 <strong>Total</strong>
                 <input style="margin-left:78px" type="text" id="total" name="total" value="$0.00" readonly/>
               </label>
             
-            <br/>
-            <br/>
-            <br/>
+            <br>
+            <br>
+            <br>
 
-            
             <button type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
             
             </form>

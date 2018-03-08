@@ -2,6 +2,9 @@
 
 function calcSub(){
     
+    /* This function determines which radio button is selected and passes
+        the price of the selected service down to the calcDisVatTotal function */
+        
     var argSubTotal;
     
     if(document.getElementById('salesforce').checked) {
@@ -26,6 +29,9 @@ function calcSub(){
   
 function calcDisVatTotal(parmSubTotal){
   
+  /* This function receives the price of the service selected from the last function
+      and calculates discount, VAT and total prices */
+  
   var discountAmt;
   var vatAmt;
   var totalPrice;
@@ -39,6 +45,9 @@ function calcDisVatTotal(parmSubTotal){
 }
 
 function display(parm1, parm2, parm3, parm4){
+  
+  /* This function receives the subtotal, discount, VAT and total values from the last function
+      and enables the Proceed button */
     
   document.getElementById("subtotal").value = "$" + parm1;
   document.getElementById("discount").value = "$" + parm2;
@@ -56,6 +65,8 @@ function enablebtnProceed(){
 function disablebtnProceed() {
   $('#btnProceed').prop('disabled', true);
 }
+
+/* This function enables the Clear choice button functionality */
   
 function refresh() {
   location.reload(true);

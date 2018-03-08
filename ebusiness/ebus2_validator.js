@@ -10,6 +10,8 @@ function validateDetails(){
     email = document.getElementsByName("email").value;
     pin = document.getElementById("user_pin").value;
     
+    /* Simple validation to ensure fields are not left blank by the user */
+    
     if (name == ""){
         alert("Please enter your name")
     }
